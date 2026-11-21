@@ -26,7 +26,7 @@ app.get('/todos', async (req, res, next) => {
 
     let filter = {};
 
-    // If user send ?completed=true or false, we filter
+    // If user send /todos?completed=true or false, we filter
     if (completed !== undefined) {
       if (completed === 'true') {
         filter.completed = true;
